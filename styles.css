@@ -1,0 +1,37 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #800000; /* Color vino para el fondo */
+}
+
+/* Utiliza la fuente Japanese 3017 para el título h1 */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: gold; /* Cambia el color del texto del título a dorado (#FFD700) */
+    font-family: "japanese 3017", sans-serif;
+}
+
+.pdf-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gold; /* Cambia el fondo a color dorado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el botón de pantalla completa */
+#fullscreenButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#fullscreenButton img {
+    width: 160px; /* Tamaño de la imagen aumentado 4 veces (40px x 4) */
+    height: 160px;
+}
