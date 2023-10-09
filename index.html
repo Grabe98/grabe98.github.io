@@ -3,38 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visor de PDF - grabe98.github.io</title>
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Visor de PDF</title>
 </head>
 <body>
-    <h1>Visor de PDF</h1>
+    <h1>MENU MYKASA</h1>
+    <!-- Coloca un contenedor para el visor de PDF -->
     <div class="pdf-container">
         <canvas id="pdfViewer"></canvas>
     </div>
-    <script>
-        // Obtén el visor de PDF
-        var pdfViewer = document.getElementById('pdfViewer');
-
-        // URL de tu archivo PDF en GitHub
-        var pdfUrl = 'https://grabe98.github.io/pdf1.pdf';
-
-        // Carga el PDF y muestra la primera página
-        pdfjsLib.getDocument(pdfUrl).promise.then(function(pdfDoc) {
-            pdfDoc.getPage(1).then(function(page) {
-                var scale = 1.5; // Escala de visualización
-                var viewport = page.getViewport({ scale: scale });
-                var canvas = pdfViewer;
-                var context = canvas.getContext('2d');
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                var renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                page.render(renderContext);
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
